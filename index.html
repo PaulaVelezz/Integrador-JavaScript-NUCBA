@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="/assets/icons8-stone-oven-96.png"
+    />
+    <title>Focacceria</title>
+    <script
+      src="https://kit.fontawesome.com/6ff66d206f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+             <!-- menu hamburguesa -->
+            <label for="menu__toggle" class="menu__btn__bar">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <ul class="primary__navigation">
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Nosotros</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+                <li>
+                    <a href="./login.html">Registrarse</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="ver-carrito" id="verCarrito">
+            <i class="fa-solid fa-ticket"></i>
+        </a>
+        
+    </header>
+    <main>
+        <!-- hero -->
+        <section id="hero">
+            <div class="slider__hero">
+                <video muted autoplay loop>
+                <source src="/assets/video hero 1.mp4" type="video/mp4" />
+                </video>
+                <div class="slider__inner">
+                    <h1>La Focacceria</h1>
+                    <h2>- Paninoteca -</h2>
+                    <a href="#about-1">
+                    <div class="scroll__down"></div>
+                    </a>
+                </div> 
+            </div>
+        </section>
+
+        <!-- about 1 -->
+        <section id="about-1">
+            <div class="container__intro">
+            <div class="container__info">
+              <div class="intro__txt">
+                <h2>Sobre nuestras focaccias</h2>
+                <p>Respetamos los procesos de fermentación natural de las masas, 
+                    el uso de harinas organicas y cereales locales, 
+                    hechas 100% de masa madre a mano.</p>
+              </div>
+            </div>
+            <div class="img__about__1">
+            <img
+              src="./assets/intro img.jpg"
+            />
+            </div>
+        </div>
+      </section>
+
+        <!-- about 2 -->
+        <section id="about-2">
+        <div class="second__container__intro">
+            <div class="second__img__about">
+                <img src="./assets/intro img 2.jpg" alt="Imagen horno">
+            </div>
+        <div class="second__container__info">
+            <div class="second__intro__txt">
+                <h2>Disfruta lo mejor de nuestros hornos</h2>
+                <button>
+                    Hace tu pedido aquí
+                </button>
+            </div>
+        </div>
+        </div>
+        </section>
+
+        <!-- banner info -->
+        <section id="banner-info">
+        <div class="banner__container">
+            <div class="banner__icon">
+                <i class="fa-solid fa-dolly"></i>
+                <div class="banner__info">
+                <h3>Envio gratis</h3>  
+                <p>Compras que superen los $2500</p>
+                </div>
+            </div>
+
+            <div class="banner__icon">
+                <i class="fa-regular fa-credit-card"></i>
+            <div class="banner__info">
+                <h3>Todos los medios de pago</h3>  
+                <p>Paga como más prefieras</p>
+            </div>
+            </div>
+
+            <div class="banner__icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            <div class="banner__info">
+                <h3>Escribinos</h3>  
+                <p>000-0000-0000</p>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- productos y filtros-->
+        <section id="products">
+            <h2>Nuestros Productos</h2>
+            <div class="categories">
+                <button class="category active">Todo</button>
+                <button class="category"  data-category="Nuevos">Nuevos</button>
+                <button class="category"  data-category="Destacados">Destacados</button>
+                <button class="category"  data-category="Vegetariano">Vegetariano</button>
+                <button class="category"  data-category="Vegano">Vegano</button>
+                <button class="category"  data-category="Dips">Dips</button>
+            </div>
+            <div class="products-container"></div> 
+            <button class="Btn-load">Ver más</button>
+        </section>
+        <!-- contactanos-->
+        <section id="contact" class="green__bg">
+        <div class="contact__logo ">
+            <h1>LOGO</h1>
+        </div>
+        <div class="contact__container">
+            <h2>Contáctanos</h2>
+            <div class="contact__info__container">
+                <div class="info__column">
+                    <p><i class="fa-solid fa-phone"></i> 000-000</p>
+                    <p><i class="fa-solid fa-envelope"></i> @gmail</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Calle S/n</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact__container">
+            <h2>Atención al cliente</h2>
+            <div class="contact__info__container">
+                <div class="info__column__atencion">
+                    <a href="#">Preguntas frecuentes</a>
+                    <a href="#">Políticas de delivery</a>
+                    <a href="#">Libro de reclamaciones</a>
+                    <a href="#">Términos y condiciones</a>
+                </div>
+            </div>
+        </div>
+            <div class="contact__container">
+                <h3>Nuestras redes</h3>
+                <div class="contact__info__container">
+                    <div class="second__info__column">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./index.js"></script>  
+</body>
+<footer class="green__bg">
+    <small>&copy; 2023
+            <a
+                class="footer__author"
+                href="https://github.com/PaulaVelezz"
+                target="_blank"
+                >Paula Velez
+            </a>
+            para <span>NUCBA 💖</span>
+        </small>
+    </footer>
+</html>
