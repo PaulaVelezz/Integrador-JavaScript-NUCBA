@@ -1,8 +1,19 @@
 @media (max-width: 992px) {
     .navbar__list{
-        display: none;
-        z-index: 2;
         position: absolute;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        background: var(#1B1A1A);
+        color: whitesmoke;
+        border: 1px solid whitesmoke;
+        align-items: flex-start;
+        padding: 30px;
+        gap: 10px;
+        z-index: 2;
+        display: none;
     }
     /*icono menu*/
     .menu__label {
