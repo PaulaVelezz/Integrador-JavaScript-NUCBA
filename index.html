@@ -16,34 +16,47 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
              <!-- menu hamburguesa -->
-            <label for="menu__toggle" class="menu__btn__bar">
+            <div class="menu__label">
                 <i class="fa-solid fa-bars"></i>
-            </label>
+            </div>
 
-            <ul class="primary__navigation">
+            <ul class="navbar__list">
                 <li>
-                    <a href="#">Inicio</a>
+                    <a href="#hero">Inicio</a>
                 </li>
                 <li>
-                    <a href="#">Nosotros</a>
+                    <a href="#about-1">Nosotros</a>
                 </li>
                 <li>
-                    <a href="#">Contacto</a>
+                    <a href="#contact">Contacto</a>
                 </li>
                 <li>
                     <a href="./login.html">Registrarse</a>
                 </li>
             </ul>
+            <!--
+            <div class="carrito__label">
+                <i class="fa-solid fa-ticket"></i>
+            </div> -->
+              <!-- modal carrito section 
+            <div class="carrito">
+                <h2>Tu Compra</h2>
+                <div class="carrito__container">
+                </div>
+                <div class="carrito__total">
+                    <p>Total:</p>
+                </div>
+                <button class="btn__delete">Eliminar</button>
+                <button class="btn__buy">Comprar</button>
+            </div> -->
+            <div class="overlay"></div>
         </nav>
-        <a href="#" class="ver-carrito" id="verCarrito">
-            <i class="fa-solid fa-ticket"></i>
-        </a>
-        
     </header>
     <main>
         <!-- hero -->
@@ -139,7 +152,7 @@
                 <button class="category"  data-category="Dips">Dips</button>
             </div>
             <div class="products-container"></div> 
-            <button class="Btn-load">Ver más</button>
+            <button class="btn__load">Ver más</button>
         </section>
         <!-- contactanos-->
         <section id="contact" class="green__bg">

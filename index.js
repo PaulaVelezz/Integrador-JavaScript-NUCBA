@@ -1,3 +1,4 @@
+//lista de productos
 const productsData = [
     {
 		id: 1,
@@ -96,7 +97,7 @@ const productsData = [
 		img: "assets/aceites 2.jpg",
 	},
 ]
-
+// division de cards
 const splitProducts = (size) => {
 	let dividedProducts = [];
 
@@ -114,16 +115,18 @@ const productsController = {
 
 // Contenedor de productos
 const products = document.querySelector(".products-container");
-// Contenedor de productos del carrito
-const productsCart = document.querySelector(".cart-container");
-//El total en precio del carrito
-const total = document.querySelector(".total");
-// El contenedor de las categorías
+// contenedor de las categorías
 const categories = document.querySelector(".categories");
 // Un htmlCollection de botones de todas las categorías (mostrar el dataset)
 const categoriesList = document.querySelectorAll(".category");
 // Botón de ver más
-const btnLoad = document.querySelector(".Btn-load");
+const btn__load = document.querySelector(".btn__load");
+
+// abrir y cerrar menu
+const btn__bar = document.querySelector(".menu__label");
+//menu
+const bars__menu = document.querySelector (".navbar__list");
+
 
 const renderProduct = (product) => {
 	const {id, name, price, description, img } = product;
@@ -171,10 +174,10 @@ const renderProducts = (index = 0, category = undefined) => {
 
 const changeShowMoreBtnState = (category) => {
 	if (!category) {
-		btnLoad.classList.remove("hidden");
+		btn__load.classList.remove("hidden");
 		return;
 	}
-	btnLoad.classList.add("hidden");
+	btn__load.classList.add("hidden");
 };
 
 const changeBtnActiveState = (selectedCategory) => {
@@ -218,16 +221,19 @@ const showMoreProducts = () => {
 	renderProducts(productsController.nextProductsIndex);
 	productsController.nextProductsIndex++;
 	if (isLastIndexOf()) {
-		btnLoad.classList.add("hidden");
+		btn__load.classList.add("hidden");
 	}
 };
 
-
+const toggleMenu = () => {
+	bars__menu.classList.toggle("open-menu");
+};
 
 const init = () => {
     renderProducts ();
     categories.addEventListener("click",applyFilter);
-    btnLoad.addEventListener ("click",showMoreProducts);
+    btn__load.addEventListener ("click",showMoreProducts);
+	btn__bar.addEventListener("click",toggleMenu);
 };
 
 init();
