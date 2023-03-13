@@ -28,51 +28,60 @@
 
             <ul class="navbar__list">
                 <li>
-                    <a href="#hero">Inicio</a>
+                    <a class="navbar__links" href="#hero">Inicio</a>
                 </li>
                 <li>
-                    <a href="#about-1">Nosotros</a>
+                    <a class="navbar__links" href="#about-1">Nosotros</a>
                 </li>
                 <li>
-                    <a href="#contact">Contacto</a>
+                    <a class="navbar__links" href="#contact">Contacto</a>
                 </li>
                 <li>
-                    <a href="./login.html">Registrarse</a>
+                    <a class="navbar__links" href="./login.html">Registrarse <i class="fa-regular fa-circle-user"></i></a>
                 </li>
             </ul>
-            <!--
-            <div class="carrito__label">
-                <i class="fa-solid fa-ticket"></i>
-            </div> -->
-              <!-- modal carrito section 
-            <div class="carrito">
-                <h2>Tu Compra</h2>
-                <div class="carrito__container">
+            
+            <div class="cart__btn">
+                <button id="open-panel">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div> 
+            <!-- modal carrito -->
+            <div class="cart">
+                <div class="cart__header">
+                    <button id="close-panel">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
                 </div>
-                <div class="carrito__total">
+
+                 <h4>Tu orden</h4>
+                <div class="cart__container">
+                      
+                </div>
+                
+                <div class="cart__total">
                     <p>Total:</p>
+                   <span class="total"></span>
                 </div>
-                <button class="btn__delete">Eliminar</button>
+
                 <button class="btn__buy">Comprar</button>
-            </div> -->
-            <div class="overlay"></div>
+                <button class="btn__delete">Eliminar productos</button>
+            </div>
+            <div class="overlay"></div> 
         </nav>
     </header>
     <main>
         <!-- hero -->
         <section id="hero">
-            <div class="slider__hero">
-                <video muted autoplay loop>
-                <source src="/assets/video hero 1.mp4" type="video/mp4" />
-                </video>
-                <div class="slider__inner">
-                    <h1>La Focacceria</h1>
-                    <h2>- Paninoteca -</h2>
-                    <a href="#about-1">
-                    <div class="scroll__down"></div>
-                    </a>
-                </div> 
+            <div class="hero__content">
+                <h1>La Focacceria</h1>
+                <h2>- Paninoteca -</h2>
+                <!--<a href="#about-1"><div class="scroll__down"></div>
+                </a>-->
             </div>
+            <video muted autoplay loop>
+                <source src="/assets/video hero 1.mp4" type="video/mp4" />
+            </video>
         </section>
 
         <!-- about 1 -->
@@ -103,9 +112,10 @@
         <div class="second__container__info">
             <div class="second__intro__txt">
                 <h2>Disfruta lo mejor de nuestros hornos</h2>
-                <button>
+
+                <a href="#products">
                     Hace tu pedido aquí
-                </button>
+                </a>
             </div>
         </div>
         </div>
