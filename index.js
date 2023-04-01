@@ -166,7 +166,7 @@ const renderProduct = (product) => {
 			    data-price="${price}"
 			    data-img="${img}"
 				data-description="${description}"
-		             > Agregar <i class="fa-solid fa-cart-plus"></i>
+		             > Añadir al carrito <i class="fa-solid fa-cart-plus"></i>
 				</button>            
     	</div>  
     `;

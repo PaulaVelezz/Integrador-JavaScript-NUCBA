@@ -10,16 +10,156 @@
       rel="icon"
       href="/assets/icons8-stone-oven-96.png"
     />
-    <title>Focacceria</title>
+    <title>Login</title>
     <script
       src="https://kit.fontawesome.com/6ff66d206f.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
 
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <!-- menu hamburguesa -->
+            <div class="menu__label">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <ul class="navbar__list">
+            <li>
+                <a class="navbar__links" href="./index.html">Inicio</a>
+            </li>
+            <li>
+                <a class="navbar__links" href="#about-1">Nosotros</a>
+            </li>
+            <li>
+                <a class="navbar__links" href="#contact">Contacto</a>
+            </li>
+            <li>
+                <a class="navbar__links" href="./login.html">Login <i class="fa-regular fa-circle-user"></i></a>
+            </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+         <!-- login-->
+        <div class="box">
+          <div class="inner-box">
+            <div class="forms-wrap">
+              <form action="index.html" autocomplete="off" class="sign-in-form" id="form">
+                <div class="logo">
+                  <img src="./assets/logo2.png" alt="logo" />
+                </div>
+  
+                <div class="heading">
+                  <h2>Bienvenido</h2>
+                </div>
+  
+                <div class="actual-form">
+                  <div class="input__wrap">
+                    <input
+                      class="input-field"
+                      type="text"
+                      autocomplete="off"
+                      name="username"
+                      id="username"
+                      placeholder="Nombre"
+                      required
+                    />
+                    <small></small>
+                  </div>
+  
+                  <div class="input__wrap">
+                    <input
+                      class="input-field"
+                      type="password"
+                      autocomplete="off"
+                      name="password"
+                      id="password"
+                      placeholder="Constraseña"
+                      required
+                    />
+                    <small></small>
+                  </div>
+  
+                  <input type="submit" value="Iniciar Sesión" class="sign-btn" />
+
+                  <div class="heading">
+                    <h6>Todavia no estas registrado?</h6>
+                    <a href="#" class="toggle">Registrate</a>
+                  </div>
+                </div>
+              </form>
+
+               <!-- sign up-->
+              <form action="index.html" autocomplete="off" class="sign-up-form" id="form">
+                <div class="logo">
+                  <img src="./assets/logo2.png" alt="logo" />
+                </div>
+  
+                <div class="heading">
+                  <h2>Registrate</h2>
+                </div>
+  
+                <div class="actual-form">
+                  <div class="input__wrap">
+                    <input
+                      class="input-field"
+                      type="text"
+                      autocomplete="off"
+                      name="username"
+                      id="username" 
+                      placeholder="Nombre"
+                      required
+                    />
+                    <small></small>
+                  </div>
+  
+                  <div class="input__wrap">
+                    <input
+                      class="input-field"
+                      type="email"
+                      autocomplete="off" 
+                      name="email"
+                      id="email"
+                      placeholder="Email"
+                      required
+                    />
+                    <small></small>
+                  </div>
+  
+                  <div class="input__wrap">
+                    <input
+                      class="input-field"
+                      type="password"
+                      autocomplete="off"
+                      name="password"
+                      id="password"
+                      placeholder="Constraseña"
+                      required
+                    />
+                    <small></small>
+                  </div>
+  
+                  <input type="submit" value="Registrarme" class="sign-btn" />
+
+                  <div class="heading">
+                    <h6>Ya tenes una cuenta creada? </h6>
+                    <a href="#" class="toggle">Inicia Sesion</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="image_form_box">
+              <div class="img-wrapper">
+                <img src="./assets/register.png" class="image" alt="" />
+              </div>
+          </div>
+        </div>
+    </main>
+
     <!-- contactanos-->
     <section id="contact" class="green__bg">
       <div class="contact__logo ">
