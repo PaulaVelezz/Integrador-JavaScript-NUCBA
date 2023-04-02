@@ -196,8 +196,27 @@ main.sign-up-mode .image_form_box {
 }
 
 .input__wrap small {
-    color: rgb(202, 5, 5);
+    color: rgb(202, 77, 5);
     font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input__wrap.error input{
+    border: solid rgb(202, 77, 5) 1px;
+    border-top: transparent; 
+    border-left: transparent;
+    border-right: transparent;
+}
+
+.input__wrap.exito input{
+    border: solid #91e07f 1px; 
+    border-top: transparent; 
+    border-left: transparent;
+    border-right: transparent;
 }
 
 .image_form_box {
