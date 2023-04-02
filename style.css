@@ -632,6 +632,74 @@ video {
 .hidden {
     display: none;
 }
+/*giftcard*/
+
+.giftcard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    padding: 45px;
+    margin: 40px;
+}
+
+.giftcard__item{
+    border: none;
+    box-shadow: 6px 6px 20px rgb(0 0 0 / 0.4);
+    background-image: url(./assets/giftcard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 50px;
+    height: 300px;
+}
+
+.giftcard__text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: left;
+    color: var(--color4);
+    background-color: transparent;
+    letter-spacing: 1px;
+    font-family: 'Zilla Slab';
+}
+
+.giftcard__text p {
+    font-weight: bolder;
+    font-size: 27px;
+    color: var(--color6);
+}
+
+.giftcard__text h2 {
+    font-family:'Shrikhand';
+    font-size: 30px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.giftcard__text button{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    background: #22a619;
+    color: var(--color6);
+    border-radius: 20px;
+    border: none;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: 'Zilla Slab';
+    cursor: pointer;
+    margin-top: 25px;
+    transition: all .3s ease;
+}
+
+.giftcard__text button:hover{
+    color: var(--color6);
+    background: var(--color4);
+    border: none;
+}
 
 /*contacto*/
 #contact{
