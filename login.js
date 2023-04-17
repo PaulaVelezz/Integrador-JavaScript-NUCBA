@@ -216,3 +216,12 @@ formII.addEventListener("input", debounce( (e) => {
     }
   })
 );
+
+
+// lógica para el preloader //
+const $pre__loader__container = document.getElementById("pre-loader__container");
+
+setTimeout (() => {
+  $pre__loader__container.classList.add("close__pre__loader");
+  $pre__loader__container.style.display = "none";
+}, 3000);

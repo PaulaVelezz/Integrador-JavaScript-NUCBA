@@ -137,6 +137,9 @@ const total = document.querySelector (".total");
 const deleteBtn = document.querySelector(".btn__delete");
 const buyBtn = document.querySelector(".btn__buy");
 
+//addmodal
+const successModal = document.querySelector(".add__modal");
+
 //probando otra forma de armar el carrito
 const openPanelBtn = document.getElementById("open-panel");
 const closePanelBtn = document.getElementById("close-panel");
@@ -152,7 +155,7 @@ const saveLocalStorage = (cartList) => {
 const renderProduct = (product) => {
 	const {id, name, price, description, img } = product;
 	return `
-		<div class="product">
+		<div class="product" data-aos="fade-down">
 			<img src="${img}">
 			<div class="product__info">
             	<h3>${name}</h3>
@@ -314,9 +317,9 @@ const renderCarritoProduct = (carritoProduct) => {
 			<span class="item__price">$ ${price}</span>
 		</div>
 		<div class="item__quantity__controller">
-			<span class="quantity__controller__down" data-id=${id}> - </span>
+			<span class="quantity__controller__down" data-id=${id}>-</span>
 			<span class="item__quantity">${quantity}</span>
-			<span class="quantity__controller__up" data-id=${id}> + </span>
+			<span class="quantity__controller__up" data-id=${id}>+</span>
 		</div>
 	</div>
 	`;
@@ -471,6 +474,16 @@ const buyComplete = () => {
 const deleteCart = () =>{
 	validacionCartAction("¿Desea vaciar su carrito?",
 	"Su carrito se vacio con exito!");
+};
+
+
+//  modal add
+const showSuccessModal = (msg) => {
+	successModal.classList.add("active__modal");
+	successModal.textContent = msg;
+	setTimeout(() => {
+		successModal.classList.remove("active__modal");
+	}, 1500);
 };
 
 const init = () => {

@@ -17,6 +17,7 @@
     ></script>
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -45,7 +46,7 @@
     </header>
     <main>
          <!-- login-->
-        <div class="box">
+        <div class="box" data-aos="fade-down">
           <div class="inner-box">
             <div class="forms-wrap">
               <form id="formII" autocomplete="off" class="sign-in-form" >
@@ -156,7 +157,7 @@
               </div>
           </div>
         </div>
-    </main>
+  </main>
 
     <!-- contactanos-->
     <section id="contact" class="green__bg">
@@ -196,8 +197,36 @@
               </div>
           </div>
     </section>
+
+    <!-- pre-loader-->
+    <style>
+      #pre-loader__container {
+        background: #f5f1f0;
+      }
+    </style>
+    <!-- pre-loader-->
+    <div class="pre__loader__container" id="pre-loader__container">
+      <div class="pre-loader__wraper">
+        <div id="loader__1">F</div>
+        <div id="loader__2">o</div>
+        <div id="loader__3">c</div>
+        <div id="loader__4">a</div>
+        <div id="loader__5">c</div>
+        <div id="loader__6">c</div>
+        <div id="loader__7">e</div>
+        <div id="loader__8">r</div>
+        <div id="loader__9">i</div>
+        <div id="loader__10">a</div>
+    </div>
+  </div>
+  
 </body>
 <script src="./login.js"></script>  
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+   AOS.init();
+</script>
+
 <footer class="green__bg">
     <small>&copy; 2023
             <a

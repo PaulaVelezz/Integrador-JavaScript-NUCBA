@@ -17,6 +17,7 @@
     ></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -43,7 +44,7 @@
             
             <div class="cart__btn">
                 <button id="open-panel">
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-basket-shopping"></i>
                 </button>
             </div> 
             <!-- modal carrito -->
@@ -95,7 +96,7 @@
                     hechas 100% de masa madre a mano.</p>
               </div>
             </div>
-            <div class="img__about__1">
+            <div class="img__about__1" data-aos="fade-left">
             <img
               src="./assets/intro img.jpg"
             />
@@ -106,14 +107,14 @@
         <!-- about 2 -->
         <section id="about-2">
         <div class="second__container__intro">
-            <div class="second__img__about">
+            <div class="second__img__about" data-aos="fade-right">
                 <img src="./assets/intro img 2.jpg" alt="Imagen horno">
             </div>
         <div class="second__container__info">
             <div class="second__intro__txt">
                 <h2>Disfruta lo mejor de nuestros hornos</h2>
 
-                <a href="#products">
+                <a href="#products" data-aos="fade-down">
                     Hace tu pedido aquí
                 </a>
             </div>
@@ -153,7 +154,7 @@
         <!-- productos y filtros-->
         <section id="products">
             <h2>Nuestros Productos</h2>
-            <div class="categories">
+            <div class="categories" data-aos="fade-down">
                 <button class="category active">Todo</button>
                 <button class="category"  data-category="Nuevos">Nuevos</button>
                 <button class="category"  data-category="Destacados">Destacados</button>
@@ -161,13 +162,13 @@
                 <button class="category"  data-category="Vegano">Vegano</button>
                 <button class="category"  data-category="Dips">Dips</button>
             </div>
-            <div class="products-container"></div> 
+            <div class="products-container" data-aos="fade-down"></div> 
             <button class="btn__load">Ver más</button>
         </section>
 
         <!-- giftcard soon -->
         <section id="giftcard" class="giftcard">
-            <div class="giftcard__item">
+            <div class="giftcard__item" data-aos="fade-down" >
                 <div class="giftcard__text">
                     <p>Gift Card</p>
                     <h2>Vas a poder regalar nuestras mejores focaccias</h2>
@@ -215,7 +216,13 @@
             </div>
         </section>
     </main>
+    <div class="add__modal"></div>
     <script src="./index.js"></script>  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 <footer class="green__bg">
     <small>&copy; 2023
