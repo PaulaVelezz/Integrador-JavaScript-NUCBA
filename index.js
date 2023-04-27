@@ -486,6 +486,21 @@ const showSuccessModal = (msg) => {
 	}, 1500);
 };
 
+// slider glider
+
+window.addEventListener('load', function() {
+	new Glider (document.querySelector('.carousel__lista'), {
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		arrows: {
+		  prev: '.carousel__anterior',
+		  next: '.carousel__siguiente'
+		}
+	});
+});
+
+
+//__________________//
 const init = () => {
     renderProducts();
     categories.addEventListener("click",applyFilter);

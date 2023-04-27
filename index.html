@@ -15,6 +15,7 @@
       src="https://kit.fontawesome.com/6ff66d206f.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -151,6 +152,42 @@
         </div>
         </section>
 
+        <!-- slider glider-->
+        <section id="carousel">
+            <div class="carousel__container">
+                <div class="carousel__lista">
+                    <div class="carousel__elemento">
+                        <img src="./assets/icons8-all-96.png" alt="">
+                        <button>Todos</button>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="./assets/icons8-hamper-96.png" alt="">
+                        <button>Nuevos</button>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="./assets/icons8-lasagna-96.png" alt="">
+                        <button>Destacados</button>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="./assets/icons8-vegetarian-mark-96.png" alt="">
+                        <button>Vegano</button>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="./assets/icons8-group-of-vegetables-96.png" alt="">
+                        <button>Vegetariano</button>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="./assets/icons8-olive-oil-96.png" alt="">
+                        <button>Dips</button>
+                    </div>
+                </div>
+                <div class="carousel__controls">
+                    <button class="carousel__anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="carousel__siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
         <!-- productos y filtros-->
         <section id="products">
             <h2>Nuestros Productos</h2>
@@ -166,15 +203,15 @@
             <button class="btn__load">Ver más</button>
         </section>
 
-        <!-- giftcard soon -->
-        <section id="giftcard" class="giftcard">
-            <div class="giftcard__item" data-aos="fade-down" >
-                <div class="giftcard__text">
-                    <p>Gift Card</p>
-                    <h2>Vas a poder regalar nuestras mejores focaccias</h2>
-                    <button>Muy pronto</button>
-                </div>
-            </div>
+        <!-- giftcard grid -->
+        <section id="gCard">
+            <section class="gCard__item"></section>
+            <section class="gCard__item__Mobile"></section>
+            <section class="gCard__text__content">
+                <p>Gift Card</p>
+                <h2>Vas a poder regalar nuestras mejores focaccias</h2>
+                <button>Muy pronto</button>
+            </section>
         </section>
 
         <!-- contactanos-->
@@ -198,7 +235,6 @@
                 <div class="info__column__atencion">
                     <a href="#">Preguntas frecuentes</a>
                     <a href="#">Políticas de delivery</a>
-                    <a href="#">Libro de reclamaciones</a>
                     <a href="#">Términos y condiciones</a>
                 </div>
             </div>
@@ -217,11 +253,12 @@
         </section>
     </main>
     <div class="add__modal"></div>
-    <script src="./index.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="./index.js"></script>  
 
 </body>
 <footer class="green__bg">

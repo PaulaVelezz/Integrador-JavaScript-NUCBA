@@ -366,7 +366,7 @@ video {
 /*about 1*/
 #about-1,
 #about-2 {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     max-width: 1200px;
@@ -539,7 +539,7 @@ video {
     padding: 40px;
     align-items: center;
     max-width: 1200px;
-    width: 70%;
+    width: 100%;
     margin: auto;
 }
 #products h2 {
@@ -550,16 +550,21 @@ video {
     padding: 10px;
     color: #1B1A1A;
 }
+
 .categories {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    padding: 8px 25px;
+    /*padding: 8px 25px;*/
+    height: 50px;
+    padding: 8px;
+    border: solid cadetblue 1px;
     background-color: #ffffffde;
     box-shadow: 0 0 9.04652px 3.39245px rgb(0 0 0 / 9%);
     border-radius: 30px;
 }
+
 .category {
     background-color: transparent;
     padding: 6px 10px;
@@ -573,11 +578,18 @@ video {
     cursor: pointer;
 }
 .category:hover{
-        background-color: gainsboro;
+    background-color: gainsboro;
 }
 .active {
     background-color: gainsboro;
 }
+
+.category__showMore{
+    padding: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
 .products-container {
     display: flex;
     flex-wrap: wrap;
@@ -653,73 +665,142 @@ video {
 .hidden {
     display: none;
 }
-/*giftcard*/
 
-.giftcard{
+/*slider glider*/
+
+#carousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.carousel__container{
+    width: 90%;
+    height: 110px;
+    background-color: #ffffffde;
+    box-shadow: 0 0 9.04652px 3.39245px rgb(0 0 0 / 9%);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.carousel__controls{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.carousel__anterior, 
+.carousel__siguiente {
+    width: 40px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    background:#1B1A1A;
+    color: #f5f1f0;
+}
+
+.carousel__elemento{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: transparent;
-    padding: 45px;
-    margin: 40px;
+    justify-content: center;
+    border: solid 1px gainsboro;
 }
 
-.giftcard__item{
+.carousel__elemento img {
+    width: 2.5rem;
+}
+
+.carousel__elemento button{
     border: none;
-    box-shadow: 6px 6px 20px rgb(0 0 0 / 0.4);
-    background-image: url(./assets/giftcard.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    padding: 50px;
-    height: 300px;
+    padding: 5px;
+    border-radius: 3rem;
+    font-size: 20px;
+    font-weight: 500;
+    font-family:'Zilla Slab';
+    letter-spacing: 1px;
+    background-color:transparent;
+    cursor: pointer;
 }
 
-.giftcard__text {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+.carousel__elemento button:hover{
+    background-color: gainsboro;
+}
+
+/*******giftcard GRID ******/
+
+#gCard{
+    display: grid;
+    grid-template-columns: repeat(10,auto);
+    grid-template-rows: 117px auto auto;
+    grid-column-gap: 20px;
+    column-gap: 20px;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    box-shadow: 6px 6px 20px rgb(0 0 0 / 0.4);
+    margin-bottom: 70px;
+}
+
+.gCard__item{
+    display: block;
+    width: 100%;
+    height: 280px;
+    grid-column: 1/11;
+    grid-row: 1/4;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    background-image: url(./assets/giftcard.jpg);
+}
+
+.gCard__item__Mobile{
+    display: none;
+}
+
+.gCard__text__content{
+    position: absolute;
+    grid-column: 1/6;
+    grid-row: 1/3;
+    width: 372px; 
+    font-size: 20px;
+    margin: 10px;
+    padding: 15px;
     text-align: left;
-    color: var(--color4);
-    background-color: transparent;
     letter-spacing: 1px;
     font-family: 'Zilla Slab';
+    background-color: transparent;
 }
 
-.giftcard__text p {
-    font-weight: bolder;
-    font-size: 27px;
-    color: var(--color6);
-}
-
-.giftcard__text h2 {
+.gCard__text__content p{
     font-family:'Shrikhand';
-    font-size: 30px;
-    margin-top: 5px;
+    font-size: 26px;
     letter-spacing: 2px;
+    color: var(--color6);
+    margin-bottom: 10px;
 }
 
-.giftcard__text button{
-    width: 150px;
-    height: 40px;
+.gCard__text__content button{
+    padding: 8px;
     font-size: 20px;
     font-weight: 400;
+    font-family: 'Zilla Slab';
     background: #22a619;
-    color: var(--color6);
+    color: var(--color3);
     border-radius: 20px;
     border: none;
     text-decoration: none;
     letter-spacing: 1px;
-    font-family: 'Zilla Slab';
     cursor: pointer;
-    margin-top: 25px;
-    transition: all .3s ease;
-}
-
-.giftcard__text button:hover{
-    color: var(--color6);
-    background: var(--color4);
-    border: none;
+    margin-top: 15px;
 }
 
 /*add modal*/

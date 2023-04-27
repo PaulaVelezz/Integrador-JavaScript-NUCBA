@@ -1,4 +1,29 @@
+/* large devices */
+/*@media(min-width: 992px) {...} */ 
 @media (max-width: 992px) {
+    
+}
+
+/*@media(min-width: 992px) {...} */ 
+@media (max-width: 915px) {
+    /* giftcard soon */
+    .giftcard__text h2{
+        font-size: 24px;
+    }
+
+    .giftcard__text p{
+        font-size: 22px;
+    }
+
+    .giftcard__text button{
+        font-size: 18px;
+        width: 120px;
+        height: 30px;
+    }
+}
+
+/* mediuml devices */
+@media(max-width: 768px) {
     .navbar__list{
         position: absolute;
         top: 60px;
@@ -27,5 +52,52 @@
 
     .open-menu{
         display: flex;
+    }
+
+    /* giftcard soon */
+    .giftcard__item{
+        height: 200px;
+    }
+
+    .giftcard__text{
+        border: solid 1px darkgreen;
+    }
+
+    /* giftcard grid */
+    .gCard__item{
+        display: none;
+    }
+    
+    .gCard__item__Mobile{ 
+        border: solid #000 4px;
+        grid-column: 1/11;
+        grid-row: 1/4;
+        display: block;
+        height: 360px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(./assets/giftcard.jpg);
+    }
+
+    .gCard__text__content{
+       width: 330px;
+    }
+}
+
+/* small devices */
+@media(max-width: 576px) {
+    #contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+
+    .info__column i{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
     }
 }
