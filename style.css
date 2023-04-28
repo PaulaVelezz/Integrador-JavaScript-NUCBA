@@ -16,9 +16,15 @@
 }
 
 /*scrollbar*/
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
 ::-webkit-scrollbar{
     display: none;
 }
+
 body{
     background-color: #f5f1f0;
 }
@@ -538,6 +544,7 @@ video {
     margin-bottom: 20px;
     padding: 10px;
     color: #1B1A1A;
+    text-align: center;
 }
 
 .categories {

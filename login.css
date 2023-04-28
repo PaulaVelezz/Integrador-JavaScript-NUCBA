@@ -380,3 +380,19 @@ main.sign-up-mode .image_form_box {
        display: none;
     }
 }
+
+/* small devices */
+@media(max-width: 576px) {
+    #contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+    .info__column i{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+}
