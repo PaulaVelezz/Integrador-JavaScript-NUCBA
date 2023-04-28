@@ -20,7 +20,7 @@ const productsData = [
 		id: 3,
 		name: "Focaccia Nápoles",
 		price: 750,
-		category: "Nuevos",
+		category: "Vegetariano",
         description:"Cherrys, Alcachofas y Cebolla Morada.",
 		img: "./assets/focaccia 7.jpg",
 	},
@@ -60,7 +60,6 @@ const productsData = [
 		id: 8,
 		name: "Focaccia Palermo",
 		price: 750,
-		category: "Nuevos",
         description: "Camarones, Jamón, Zuccini y Pesto.",
 		img: "./assets/focaccia 17.jpg",
 	},
@@ -405,7 +404,6 @@ const createProductCart = (product) =>{
 	];
 };
 
-
 const quantityControllerDownBtn = (id) => {
 	const existingCartProduct = cart.find((item) => {
 		return item.id === id;
@@ -474,16 +472,6 @@ const buyComplete = () => {
 const deleteCart = () =>{
 	validacionCartAction("¿Desea vaciar su carrito?",
 	"Su carrito se vacio con exito!");
-};
-
-
-//  modal add
-const showSuccessModal = (msg) => {
-	successModal.classList.add("active__modal");
-	successModal.textContent = msg;
-	setTimeout(() => {
-		successModal.classList.remove("active__modal");
-	}, 1500);
 };
 
 // slider glider

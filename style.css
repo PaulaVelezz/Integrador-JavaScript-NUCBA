@@ -803,26 +803,6 @@ video {
     margin-top: 15px;
 }
 
-/*add modal*/
-.add__modal {
-    padding: 15px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color6);
-    background-color: var(--color1);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    transition: all 0.5s ease-out;
-    transform: translateY(200%);
-}
-  
-.active__modal {
-    transform: translateY(0);
-    transition: all 0.5s ease-in;
-}
-
 /*contacto*/
 #contact{
     display: flex;
