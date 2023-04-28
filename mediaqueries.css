@@ -6,6 +6,19 @@
 
 /*@media(min-width: 992px) {...} */ 
 @media (max-width: 915px) {
+    .container__intro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container__intro .intro__txt{
+        margin-bottom: 30px;
+    }
+
+    .second__img__about{
+        display: none;
+    }
+
     /* giftcard soon */
     .giftcard__text h2{
         font-size: 24px;
@@ -31,7 +44,7 @@
         right: 5%;
         width: 90%;
         flex-direction: column;
-        background: rgba(0, 0, 0, 0.7);
+        background: #040404 /* rgba(0, 0, 0, 0.7)*/;
         color: whitesmoke;
         font-weight: 600;
         letter-spacing: 2px;
@@ -54,6 +67,11 @@
         display: flex;
     }
 
+    .categories{
+        height: 84px;
+        padding: 4px;
+    }
+
     /* giftcard soon */
     .giftcard__item{
         height: 200px;
@@ -69,7 +87,7 @@
     }
     
     .gCard__item__Mobile{ 
-        border: solid #000 4px;
+        border: solid #040404 4px;
         grid-column: 1/11;
         grid-row: 1/4;
         display: block;
@@ -87,6 +105,16 @@
 
 /* small devices */
 @media(max-width: 576px) {
+
+    .second__intro__txt h2{
+        font-size: 34px;
+    }
+
+    #products h2{
+        font-size: 34px;
+        text-align: center;
+    }
+
     #contact{
         display: flex;
         flex-direction: column;

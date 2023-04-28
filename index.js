@@ -256,8 +256,6 @@ const toggleMenu = () => {
 			("open-cart")
 			return;
 		}
-		overlay.classList.toggle
-		("show-overley");
 };
 
 const toggleCart = () =>{
@@ -267,8 +265,6 @@ const toggleCart = () =>{
 		("open-menu");
 		return;
 	}
-	overlay.classList.toggle
-	("show-overley");
 };
 
 const closeOnClick = (e) => {
@@ -276,7 +272,6 @@ const closeOnClick = (e) => {
 		return;
 	}
 	bars__menu.classList.remove("open-menu");
-	overlay.classList.remove("show-overlay");
 };
 
 const closeOnScroll = () => {
@@ -290,8 +285,7 @@ const closeOnScroll = () => {
 	}
 	bars__menu.classList.remove("open-menu");
 	cart__menu.classList.remove("open-cart");
-	overlay.classList.remove
-	("show-overley");
+	
 };
 
 //probando otra forma de armar el carrito

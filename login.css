@@ -160,7 +160,7 @@ form.sign-up-form {
 }
   
 .logo img {
-    width: 220px;
+    width: 200px;
 }
   
 .heading h2 {
@@ -374,5 +374,9 @@ main.sign-up-mode .image_form_box {
     
     .img-wrapper {
         width: 30px;
+    }
+
+    .navbar__list .iniciar{
+       display: none;
     }
 }
