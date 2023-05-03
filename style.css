@@ -7,10 +7,11 @@
     --color5:#242424;
     --color6:#ccc;
 }
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
@@ -27,6 +28,7 @@ html {
 
 body{
     background-color: #f5f1f0;
+    overflow-x: hidden;
 }
 
 /*header*/
@@ -371,6 +373,7 @@ video {
     text-align: center;
     letter-spacing: 2px;
     margin-bottom: 35px;
+    padding: 10px;
 }
  
 .container__intro {
@@ -414,6 +417,7 @@ video {
     font-family:'Zilla Slab';
     letter-spacing: 1px;
     text-align: center;
+    padding: 30px;
 }
 
 /*about 2*/
@@ -449,6 +453,7 @@ video {
     text-align: center;
     letter-spacing: 2px;
     margin-bottom: 20px;
+    padding: 10px;
 }
 
 .second__intro__txt{
