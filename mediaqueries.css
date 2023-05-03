@@ -119,6 +119,24 @@
         flex-direction: column;
         padding: 5px;
     }
+
+    .cart{
+        width: 80%;
+    }
+
+    .cart h4 {
+        font-size: 1.8em;
+    }
+    .cart__container{
+        text-align: center;
+    }
+    .cart__total{
+        font-size: 1.1em;
+        height: 50px;
+    }
+    .cart__item img{
+        display: none;
+    }
 }
 
 @media(max-width: 480px) {
@@ -164,5 +182,12 @@
     }
    .gCard__text__content h2{
     font-size: 1.2em;
+   }
+   .item__title {
+    font-size: 17px;
+   }
+   .cart__item{
+    padding: 3px;
+    gap: 3px;
    }
 }
