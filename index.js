@@ -352,6 +352,22 @@ const checkCartState = () => {
 	disableBtn(deleteBtn);
 };
 
+// Animation 
+function animation() {
+ 	const Toast = Swal.mixin({
+ 		toast: true,
+ 		position: 'top-end',
+ 		showConfirmButton: false,
+		icon: 'success',
+		timerProgressBar: true,
+ 		timer: 1500
+ 	});
+ 	Toast.fire ({
+ 		title: 'Se agregó exitosamente',
+ 		type: 'success',
+ 	});
+}
+
 const addCartProduct = (e) => {
 	if (!e.target.classList.contains("btn-add")) {
 		return;
@@ -367,6 +383,7 @@ const addCartProduct = (e) => {
 	}
 
 	checkCartState();
+	animation();
 };
 
 const productData = (id, name, price, img) => {
@@ -467,19 +484,6 @@ const deleteCart = () =>{
 	validacionCartAction("¿Desea vaciar su carrito?",
 	"Su carrito se vacio con exito!");
 };
-
-// slider glider
-
-window.addEventListener('load', function() {
-	new Glider (document.querySelector('.carousel__lista'), {
-		slidesToShow: 3,
-		slidesToScroll: 3,
-		arrows: {
-		  prev: '.carousel__anterior',
-		  next: '.carousel__siguiente'
-		}
-	});
-});
 
 
 //__________________//

@@ -342,7 +342,7 @@ video {
 }
  
 .hero__content h1 {
-    font-size: 58px;
+    font-size: 4.2rem;
     font-family:'Shrikhand';
     font-weight: lighter;
     margin-bottom: 0.1em;
@@ -667,74 +667,6 @@ video {
     display: none;
 }
 
-/*slider glider*/
-
-#carousel{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-    max-width: 1200px;
-}
-
-.carousel__container{
-    width: 90%;
-    height: 110px;
-    background-color: #ffffffde;
-    box-shadow: 0 0 9.04652px 3.39245px rgb(0 0 0 / 9%);
-    border-radius: 25px;
-    overflow: hidden;
-}
-
-.carousel__controls{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 5px;
-}
-
-.carousel__anterior, 
-.carousel__siguiente {
-    width: 40px;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    background:#1B1A1A;
-    color: #f5f1f0;
-}
-
-.carousel__elemento{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: solid 1px gainsboro;
-}
-
-.carousel__elemento img {
-    width: 2.5rem;
-}
-
-.carousel__elemento button{
-    border: none;
-    padding: 5px;
-    border-radius: 3rem;
-    font-size: 20px;
-    font-weight: 500;
-    font-family:'Zilla Slab';
-    letter-spacing: 1px;
-    background-color:transparent;
-    cursor: pointer;
-}
-
-.carousel__elemento button:hover{
-    background-color: gainsboro;
-}
-
 /*******giftcard GRID ******/
 
 #gCard{
@@ -747,7 +679,7 @@ video {
     width: 80%;
     margin: auto;
     box-shadow: 6px 6px 20px rgb(0 0 0 / 0.4);
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .gCard__item{
@@ -802,6 +734,80 @@ video {
     letter-spacing: 1px;
     cursor: pointer;
     margin-top: 15px;
+}
+
+/*reviews section*/
+#reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+#reviews h2 {
+    font-family: 'Shrikhand';
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #1B1A1A;
+}
+
+.reviews__container{
+    width: 90%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.review__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    width: 420px;
+    height: 200px;
+    padding: 1rem;
+    font-family:'Zilla Slab';
+}
+
+.review__box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+
+.review_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user_profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.user_profile img{
+    width: 60px;
+    border: solid 2px #05bb64;
+    border-radius: 7px;
+}
+
+.review_content{
+    text-align: center;
+    padding: 5px;
+}
+
+.review_footer span{
+    font-weight: 600;
+    color: #05bb64;
 }
 
 /*contacto*/
@@ -878,12 +884,13 @@ video {
     justify-content: center;
     align-items: center;
     width: 160px;
-    background-color:#242424;
     border-radius: 5px;
 }
 
 .contact__logo img{
-    width: 150px;
+    width: 140px;
+    opacity: 0.9;
+    border-radius: 7px;
 }
 
 footer{

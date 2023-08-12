@@ -10,79 +10,75 @@
 .pre__loader__container{
     position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     top: 0;
     left: 0;
     padding: 0;
+    background:#1b1a1a;
 }
 
 .pre-loader__wraper{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     width: 100%;
-    height: 100%;
+    height: 100px;
+    line-height: 100px;
     text-align: center;
+}
+
+.pre-loader__wraper span {
+    display: inline-block;
+    color: #f5f1f0;
+    font-size: 4em;
+    font-family:'Shrikhand';
+    letter-spacing: 1px;
+}
+
+.pre-loader__wraper span:nth-child(1) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 0s infinite linear alternate;
+}
+.pre-loader__wraper span:nth-child(2) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 0.2s infinite linear alternate;
+}
+.pre-loader__wraper span:nth-child(3) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 0.4s infinite linear alternate;
+}
+.pre-loader__wraper span:nth-child(4) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 0.6s infinite linear alternate;
+}
+.pre-loader__wraper span:nth-child(5) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 0.8s infinite linear alternate;
+}
+.pre-loader__wraper span:nth-child(6) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 1s infinite linear alternate;
+}
+.pre-loader__wraper span:nth-child(7) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 1.2s infinite linear alternate;
+}
+
+@keyframes blur-text {
+    0% {
+        filter: blur(0px);
+    }
+    100% {
+        filter: blur(4px);
+    }
 }
 
 .close__pre__loader{
     opacity: 0;
     transition: 1.5s;
-}
-
-#loader__1, #loader__2, #loader__3, 
-#loader__4, #loader__5, #loader__6, 
-#loader__7, #loader__8, #loader__9, 
-#loader__10 {
-    position: relative;
-    display: inline-block;
-    color:  #22a619;
-    font-size: 4em;
-    font-family:'Shrikhand';
-    letter-spacing: 1px;
-    top: 40%;
-    left: 0;
-    animation: fade 3s linear infinite;
-}
-
-#loader__1{
-    animation-delay: .70s;
-}
-#loader__2{
-    animation-delay: .90s;
-}
-#loader__3{
-    animation-delay: 1.10s;
-}
-#loader__4{
-    animation-delay: 1.30s;
-}
- #loader__5{
-    animation-delay: 1.50s;
-}
-  #loader__6{
-    animation-delay: 1.70s;
-}
-#loader__7{
-    animation-delay: 1.90s;
-}
-#loader__8{
-    animation-delay: 2.10s;
-}
-#loader__9{
-    animation-delay: 2.30s;
-} 
-#loader__10{
-    animation-delay: 2.50s;
-}
-
-@keyframes fade {
-    0% {
-        text-shadow: 0 0 0 #151111;
-    }
-    80% {
-        text-shadow: 0 0 30px #ccc;
-    }
-    100% {
-        text-shadow: 0 0 70px #ccc;
-    }
 }
 
 html,body{
